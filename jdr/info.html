@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="formJoueur">
+      <div>
+        <h1>Nom :</h1>
+        <label for="nom"></label>
+        <input type="text" id="nom" name="nom" value="" />
+      </div>
+
+      <div>
+        <input type="checkbox" id="conditions" name="conditions" checked />
+        <label for="conditions">Acceptez-vous les conditions</label>
+      </div>
+
+      <fieldset>
+        <legend>Difficulté</legend>
+
+        <div>
+          <input
+            type="radio"
+            id="simple"
+            name="niveau"
+            value="simple"
+            checked
+          />
+          <label for="simple">Simple</label>
+        </div>
+        <div>
+          <input type="radio" id="moyen" name="niveau" value="moyen" />
+          <label for="moyen">Moyen</label>
+        </div>
+
+        <div>
+          <input type="radio" id="complique" name="niveau" value="complique" />
+          <label for="complique">Mort subite</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Jouer</button>
+    </form>
+
+    <script src="info.js" defer></script>
+  </body>
+</html>

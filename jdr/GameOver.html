@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game Over</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="gameOver">
+        <h2 id="affichageErreur">La réponse était :</h2>
+        <h2 id="affichagePtsresult">Score final :</h2>
+      </div>
+
+      <div>
+        <button id="rejouerbtn" type="button">Rejouer</button>
+      </div>
+
+      <div>
+        <h1>Recevoir le résultat par mail :</h1>
+        <label for="mail"></label>
+        <input type="email" id="mail" placeholder="entrer un mail" />
+        <button id="btnEnvoyer" type="button">Envoyer</button>
+      </div>
+    </form>
+
+    <script src="GameOver.js" defer></script>
+  </body>
+</html>

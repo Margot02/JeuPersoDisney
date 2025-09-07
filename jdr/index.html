@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deviner le personnage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="html" href="GameOver.html" />
+  </head>
+  <body>
+    <main class="main">
+      <div>
+        <h1>Deviner le personnage Disney</h1>
+        <h2 id="affichagePts">Nombre de points</h2>
+        <br />
+      </div>
+
+      <div id="gameContainer">
+        <input type="text" id="saisie" placeholder="entrer un nom" />
+        <button id="btnValider">Valider</button>
+      </div>
+
+      <div id="indiceContainer">
+        <h1>Indices</h1>
+        <button id="btnAge">Âge</button>
+        <button id="btnLieu">Lieu de naissance</button>
+        <button id="btnPremiere">Première apparition</button>
+        <button id="btnDate">Date de sortie du film</button>
+        <button id="btnCheveux">Cheveux</button>
+        <button id="btnYeux">Yeux</button>
+        <button id="btnTaille">Taille</button>
+        <button id="btnRole">Rôle</button>
+      </div>
+
+      <div id="resultContainer">
+        <p id="resultMessage">Bonjour!</p>
+        <p id="scoreMessage"></p>
+      </div>
+    </main>
+
+    <script src="listePerso.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="indice.js" defer></script>
+    <script src="visu.js" defer></script>
+  </body>
+</html>
